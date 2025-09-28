@@ -1,14 +1,21 @@
-# Template for Isaac Lab Projects
+# Isaac Lab Projects
 
 ## Overview
 
-This project/repository serves as a template for building projects or extensions based on Isaac Lab.
-It allows you to develop in an isolated environment, outside of the core Isaac Lab repository.
+This repository contains simple tutorials for Isaac Lab.
+
 
 **Key Features:**
 
-- `Isolation` Work outside the core Isaac Lab repository, ensuring that your development efforts remain self-contained.
-- `Flexibility` This template is set up to allow your code to be run as an extension in Omniverse.
+- `#1 Basic Tutoria`: Step-by-step guide from official documentation to help you understand and use various features of the framework.
+
+- `#2 Robot Learning Framework`: Explain the two task design methods: Manager-Based & Direct. Analyze 3 examples for each.
+
+- `#3 External Project`: How to separate tasks from official IsaacLab repository
+
+- `#4 Deploying policies in Isaac Sim`: A guide to exporting trained policies from the IsaacLab RL environment and deploying them for inference and visualization within IsaacSim's graphicial interface.
+
+- `#5 Sim2Sim: Isaac Lab -> Gazebo, MuJoCo`: Methods and considerations for transferring trained from the IsaacLab environment to other simulators (e.g., Gazebo, MuJoCo) for cross-platform validation
 
 **Keywords:** extension, template, isaaclab
 
