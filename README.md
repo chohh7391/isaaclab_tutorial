@@ -17,7 +17,7 @@ This repository contains simple tutorials for Isaac Lab.
 
 - `#5 Sim2Sim: Isaac Lab -> Gazebo, MuJoCo`: Methods and considerations for transferring trained from the IsaacLab environment to other simulators (e.g., Gazebo, MuJoCo) for cross-platform validation
 
-**Keywords:** extension, template, isaaclab
+**Keywords:** isaaclab, tutorial
 
 ## Installation
 
@@ -30,13 +30,42 @@ This repository contains simple tutorials for Isaac Lab.
 
     ```bash
     # use 'PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
-    python -m pip install -e source/isaaclab_tutorial
 
+- create conda env
+    ```
+    conda create -n isaaclab_tut python=3.11
+    conda activate isaaclab_tut
+    ```
+
+- install dependencies
+    ```
+    pip install --upgrade pip
+    pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+    pip install "isaacsim[all,extscache]==5.0.0" --extra-index-url https://pypi.nvidia.com
+    ```
+
+    ```
+    cd ~/
+
+    git clone git@github.com:isaac-sim/IsaacLab.git
+
+    sudo apt install cmake build-essential
+
+    ./isaaclab.sh --install
+    ```
+    ```
+    cd ~/isaaclab_tutorial
+    python -m pip install -e source/isaaclab_tutorial
+    ```
+
+
+    
+    
 - Verify that the extension is correctly installed by:
 
     - Listing the available tasks:
 
-        Note: It the task name changes, it may be necessary to update the search pattern `"Template-"`
+        Note: It the task name changes, it may be necessary to update the search pattern `"Tutorial-"`
         (in the `scripts/list_envs.py` file) so that it can be listed.
 
         ```bash
