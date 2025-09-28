@@ -1,4 +1,8 @@
-# Isaac Lab Projects
+# Isaac Lab Tutorial
+
+[![IsaacSim](https://img.shields.io/badge/IsaacSim-5.0.0-silver.svg)](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/index.html)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
+[![Linux platform](https://img.shields.io/badge/platform-linux--64-orange.svg)](https://releases.ubuntu.com/22.04/)
 
 ## Overview
 
@@ -30,7 +34,6 @@ This repository contains simple tutorials for Isaac Lab.
 
     ```bash
     # use 'PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
-
 - create conda env
     ```
     conda create -n isaaclab_tut python=3.11
@@ -43,14 +46,10 @@ This repository contains simple tutorials for Isaac Lab.
     pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
     pip install "isaacsim[all,extscache]==5.0.0" --extra-index-url https://pypi.nvidia.com
     ```
-
     ```
     cd ~/
-
     git clone git@github.com:isaac-sim/IsaacLab.git
-
     sudo apt install cmake build-essential
-
     ./isaaclab.sh --install
     ```
     ```
