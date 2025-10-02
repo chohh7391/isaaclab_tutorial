@@ -17,7 +17,8 @@ from isaaclab.managers import TerminationTermCfg as DoneTerm
 from isaaclab.scene import InteractiveSceneCfg
 from isaaclab.utils import configclass
 
-import isaaclab_tasks.manager_based.classic.cartpole.mdp as mdp
+# import isaaclab_tasks.manager_based.classic.cartpole.mdp as mdp
+import isaaclab_tutorial.tasks.manager_based.cartpole.mdp as mdp
 
 ##
 # Pre-defined configs
