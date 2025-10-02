@@ -15,30 +15,30 @@ from .factory_env_cfg import FactoryTaskGearMeshCfg, FactoryTaskNutThreadCfg, Fa
 
 gym.register(
     id="Tutorial-Factory-PegInsert-Direct-v0",
-    entry_point="isaaclab_tasks.direct.factory:FactoryEnv",
+    entry_point=f"{__name__}.factory_env:FactoryEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": FactoryTaskPegInsertCfg,
+        "env_cfg_entry_point": f"{__name__}.factory_env:FactoryTaskPegInsertCfg",
         "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_ppo_cfg.yaml",
     },
 )
 
 gym.register(
     id="Tutorial-Factory-GearMesh-Direct-v0",
-    entry_point="isaaclab_tasks.direct.factory:FactoryEnv",
+    entry_point=f"{__name__}.factory_env:FactoryEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": FactoryTaskGearMeshCfg,
+        "env_cfg_entry_point": f"{__name__}.factory_env:FactoryTaskGearMeshCfg",
         "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_ppo_cfg.yaml",
     },
 )
 
 gym.register(
     id="Tutorial-Factory-NutThread-Direct-v0",
-    entry_point="isaaclab_tasks.direct.factory:FactoryEnv",
+    entry_point=f"{__name__}.factory_env:FactoryEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": FactoryTaskNutThreadCfg,
+        "env_cfg_entry_point": f"{__name__}.factory_env:FactoryTaskNutThreadCfg",
         "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_ppo_cfg.yaml",
     },
 )

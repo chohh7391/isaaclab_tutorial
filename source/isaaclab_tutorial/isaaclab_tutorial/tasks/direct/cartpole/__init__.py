@@ -28,7 +28,7 @@ gym.register(
     },
 )
 
-gym.register(
+gym.register( 
     id="Tutorial-Cartpole-RGB-Camera-Direct-v0",
     entry_point=f"{__name__}.cartpole_camera_env:CartpoleCameraEnv",
     disable_env_checker=True,
