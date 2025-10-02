@@ -15,7 +15,7 @@ from isaaclab.sim import SimulationCfg
 from isaaclab.terrains import TerrainImporterCfg
 from isaaclab.utils import configclass
 
-from isaaclab_tasks.direct.locomotion.locomotion_env import LocomotionEnv
+from isaaclab_tutorial.tasks.direct.locomotion.locomotion_env import LocomotionEnv
 
 
 @configclass

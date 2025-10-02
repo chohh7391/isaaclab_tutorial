@@ -10,7 +10,8 @@ from isaaclab.managers import SceneEntityCfg
 from isaaclab.sensors import TiledCameraCfg
 from isaaclab.utils import configclass
 
-import isaaclab_tasks.manager_based.classic.cartpole.mdp as mdp
+# import isaaclab_tasks.manager_based.classic.cartpole.mdp as mdp
+import isaaclab_tutorial.tasks.direct.cartpole.mdp as mdp
 
 from .cartpole_env_cfg import CartpoleEnvCfg, CartpoleSceneCfg
 

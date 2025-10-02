@@ -6,8 +6,6 @@
 import gymnasium as gym
 
 from . import agents
-from .factory_env import FactoryEnv
-from .factory_env_cfg import FactoryTaskGearMeshCfg, FactoryTaskNutThreadCfg, FactoryTaskPegInsertCfg
 
 ##
 # Register Gym environments.
@@ -18,7 +16,7 @@ gym.register(
     entry_point=f"{__name__}.factory_env:FactoryEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.factory_env:FactoryTaskPegInsertCfg",
+        "env_cfg_entry_point": f"{__name__}.factory_env_cfg:FactoryTaskPegInsertCfg",
         "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_ppo_cfg.yaml",
     },
 )
@@ -28,7 +26,7 @@ gym.register(
     entry_point=f"{__name__}.factory_env:FactoryEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.factory_env:FactoryTaskGearMeshCfg",
+        "env_cfg_entry_point": f"{__name__}.factory_env_cfg:FactoryTaskGearMeshCfg",
         "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_ppo_cfg.yaml",
     },
 )
@@ -38,7 +36,7 @@ gym.register(
     entry_point=f"{__name__}.factory_env:FactoryEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.factory_env:FactoryTaskNutThreadCfg",
+        "env_cfg_entry_point": f"{__name__}.factory_env_cfg:FactoryTaskNutThreadCfg",
         "rl_games_cfg_entry_point": f"{agents.__name__}:rl_games_ppo_cfg.yaml",
     },
 )
