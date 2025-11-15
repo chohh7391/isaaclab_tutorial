@@ -12,7 +12,7 @@ using Isaac-Velocity-Rough-H1-v0. The robot is commanded to move forward at a co
 .. code-block:: bash
 
     # Run the script
-    ./isaaclab.sh -p scripts/tutorials/03_envs/policy_inference_in_usd.py --checkpoint /path/to/jit/checkpoint.pt
+    python tutorials/scripts/1_basic/03_envs/policy_inference_in_usd.py --checkpoint /path/to/jit/checkpoint.pt
 
 """
 

@@ -9,7 +9,7 @@ This script demonstrates how to create a rigid object and interact with it.
 .. code-block:: bash
 
     # Usage
-    ./isaaclab.sh -p scripts/tutorials/01_assets/run_rigid_object.py
+    python tutorials/scripts/1_basic/01_assets/run_rigid_object.py
 
 """
 

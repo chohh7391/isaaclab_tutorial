@@ -10,7 +10,7 @@ It accompanies the tutorial on docker usage.
 .. code-block:: bash
 
     # Usage
-    ./isaaclab.sh -p scripts/tutorials/00_sim/log_time.py
+    python tutorials/scripts/1_basic/00_sim/log_time.py
 
 """
 

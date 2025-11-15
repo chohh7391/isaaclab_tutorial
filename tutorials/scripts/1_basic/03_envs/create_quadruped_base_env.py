@@ -13,7 +13,7 @@ the terrain.
 .. code-block:: bash
 
     # Run the script
-    ./isaaclab.sh -p scripts/tutorials/03_envs/create_quadruped_base_env.py --num_envs 32
+    python tutorials/scripts/1_basic/03_envs/create_quadruped_base_env.py --num_envs 32
 
 """
 

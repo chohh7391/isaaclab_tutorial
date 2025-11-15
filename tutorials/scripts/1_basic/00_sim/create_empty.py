@@ -8,7 +8,7 @@
 .. code-block:: bash
 
     # Usage
-    ./isaaclab.sh -p scripts/tutorials/00_sim/create_empty.py
+    python tutorials/scripts/1_basic/00_sim/create_empty.py
 
 """
 

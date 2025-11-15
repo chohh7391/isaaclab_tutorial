@@ -8,7 +8,7 @@
 .. code-block:: bash
 
     # Usage
-    ./isaaclab.sh -p scripts/tutorials/00_sim/set_rendering_mode.py
+    python tutorials/scripts/1_basic/00_sim/set_rendering_mode.py
 
 """
 
