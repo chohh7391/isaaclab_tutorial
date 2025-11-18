@@ -8,12 +8,11 @@
 
 This repository contains simple tutorials for Isaac Lab.
 
-
 **Key Features:**
 
 - `#1 Basic Tutoria`: Step-by-step guide from official documentation to help you understand and use various features of the framework.
 
-- `#2 Robot Learning Framework`: Explain the two task design methods: Manager-Based & Direct. Analyze 3 examples for each.
+- `#2 Robot Learning Framework`: Explain the two task design methods: Manager-Based & Direct. Analyze 2 or three examples for each
 
 - `#3 External Project`: How to separate tasks from official IsaacLab repository
 
@@ -25,35 +24,34 @@ This repository contains simple tutorials for Isaac Lab.
 
 ## Installation
 
-- create conda env
 ```bash
+# 1) Conda env
 conda create -n isaaclab_tut python=3.11
 conda activate isaaclab_tut
-```
 
-```bash
+# 2) Clone the repo
+cd $HOME
+git clone https://github.com/chohh7391/isaaclab_tutorial.git
+cd isaaclab_tutorial
+
+# 3) Pytorch (CUDA 12.8)
 pip install --upgrade pip
-pip install "isaacsim[all,extscache]==5.1.0" --extra-index-url https://pypi.nvidia.com
 pip install -U torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
-```
 
-- Install Isaac Lab
-```bash
-cd ~/
-git clone -b v2.3.0 git@github.com:isaac-sim/IsaacLab.git
-```
+# 4) Isaac Sim SDK (v5.1.0)
+pip install "isaacsim[all,extscache]==5.1.0" --extra-index-url https://pypi.nvidia.com
 
-```bash
-sudo apt install cmake build-essential
-cd IsaacLab
-./isaaclab.sh --install
-```
+# 5) Isaac Lab (v2.3.0)
+git clone -branch v2.3.0 git@github.com:isaac-sim/IsaacLab.git _isaaclab
+sudo apt install -y cmake build-essential
+./_isaaclab/isaaclab.sh --install
 
-```bash
-cd ~/isaaclab_tutorial
+# 6) Smoke test (headless sim)
+python _isaaclab/scripts/tutorials/00_sim/create_empty.py --headless
+
+# 7) Dev install
 python -m pip install -e source/isaaclab_tutorial
 ```
-
 
 
 - Verify that the extension is correctly installed by:
