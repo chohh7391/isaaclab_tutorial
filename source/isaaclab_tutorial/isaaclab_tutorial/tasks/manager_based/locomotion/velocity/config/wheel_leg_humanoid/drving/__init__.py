@@ -34,3 +34,24 @@ gym.register(
         "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:WheelLegHumanoidDrivingFlatPPORunnerCfg",
     },
 )
+
+# Play
+gym.register(
+    id="Tutorial-Velocity-WheelLegHumanoid-Driving-Rough-Play-v0",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+    disable_env_checker=True,
+    kwargs={
+        "env_cfg_entry_point": f"{__name__}.rough_env_cfg:WheelLegHumanoidDrivingRoughEnvCfg_PLAY",
+        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:WheelLegHumanoidDrivingRoughPPORunnerCfg",
+    },
+)
+
+gym.register(
+    id="Tutorial-Velocity-WheelLegHumanoid-Driving-Flat-Play-v0",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+    disable_env_checker=True,
+    kwargs={
+        "env_cfg_entry_point": f"{__name__}.flat_env_cfg:WheelLegHumanoidDrivingFlatEnvCfg_PLAY",
+        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:WheelLegHumanoidDrivingFlatPPORunnerCfg",
+    },
+)
