@@ -1,0 +1,1 @@
+from .drivable import DRIVABLE_TERRAINS_CFG
