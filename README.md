@@ -8,6 +8,12 @@
 
 This repository contains simple tutorials for Isaac Lab.
 
+Youtube: https://www.youtube.com/playlist?list=PLoOyjqPSGrjXFU2thNTkJYplPztOXa4_W
+
+PDF: [이동로봇](./docs/이동로봇_조현호.pdf)
+
+PPT: [이동로봇](./docs/이동로봇_조현호.pptx)
+
 **Key Features:**
 
 - `#1 Basic Tutoria`: Step-by-step guide from official documentation to help you understand and use various features of the framework.
@@ -18,7 +24,6 @@ This repository contains simple tutorials for Isaac Lab.
 
 - `#4 Deploying policies in Isaac Sim`: A guide to exporting trained policies from the IsaacLab RL environment and deploying them for inference and visualization within IsaacSim's graphicial interface.
 
-- `#5 Sim2Sim: Isaac Lab -> Gazebo, MuJoCo`: Methods and considerations for transferring trained from the IsaacLab environment to other simulators (e.g., Gazebo, MuJoCo) for cross-platform validation
 
 **Keywords:** isaaclab, tutorial
 
