@@ -23,11 +23,11 @@ class UnitreeGo2WActionsCfg(ActionsCfg):
     """Action specifications for the MDP."""
 
     joint_pos = mdp.JointPositionActionCfg(
-        asset_name="robot", joint_names=[""], scale=0.25, use_default_offset=True, clip=None, preserve_order=True
+        asset_name="robot", joint_names=[""], scale=0.25, use_default_offset=True
     )
 
     joint_vel = mdp.JointVelocityActionCfg(
-        asset_name="robot", joint_names=[""], scale=5.0, use_default_offset=True, clip=None, preserve_order=True
+        asset_name="robot", joint_names=[""], scale=5.0, use_default_offset=True
     )
 
 

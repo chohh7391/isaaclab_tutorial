@@ -3,22 +3,6 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-"""
-This script demonstrates policy inference in a prebuilt USD environment.
-
-In this example, we use a locomotion policy to control the H1 robot. The robot was trained
-using Isaac-Velocity-Rough-H1-v0. The robot is commanded to move forward at a constant velocity.
-
-.. code-block:: bash
-
-    # Run the script
-    python tutorials/scripts/1_basic/03_envs/policy_inference_in_usd.py --checkpoint /path/to/jit/checkpoint.pt
-
-"""
-
-"""Launch Isaac Sim Simulator first."""
-
-
 import argparse
 
 from isaaclab.app import AppLauncher
@@ -44,8 +28,6 @@ import torch
 import omni
 
 from isaaclab.envs import ManagerBasedRLEnv
-from isaaclab.terrains import TerrainImporterCfg
-from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR
 
 from isaaclab_tutorial.tasks.manager_based.locomotion.velocity.config.unitree_go2w.flat_env_cfg import UnitreeGo2WFlatEnvCfg
 
