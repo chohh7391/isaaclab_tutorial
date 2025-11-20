@@ -5,30 +5,11 @@ from isaaclab.assets.articulation import ArticulationCfg
 from isaaclab_tutorial.assets import ISAACLAB_ASSETS_DATA_DIR
 
 UNITREE_GO2W_CFG = ArticulationCfg(
-    # spawn=sim_utils.UrdfFileCfg(
-    #     fix_base=False,
-    #     merge_fixed_joints=True,
-    #     replace_cylinders_with_capsules=False,
-    #     asset_path=f"{ISAACLAB_ASSETS_DATA_DIR}/Robots/go2w_description/urdf/go2w_description.urdf",
-    #     activate_contact_sensors=True,
-    #     rigid_props=sim_utils.RigidBodyPropertiesCfg(
-    #         disable_gravity=False,
-    #         retain_accelerations=False,
-    #         linear_damping=0.0,
-    #         angular_damping=0.0,
-    #         max_linear_velocity=1000.0,
-    #         max_angular_velocity=1000.0,
-    #         max_depenetration_velocity=1.0,
-    #     ),
-    #     articulation_props=sim_utils.ArticulationRootPropertiesCfg(
-    #         enabled_self_collisions=True, solver_position_iteration_count=4, solver_velocity_iteration_count=0
-    #     ),
-    #     joint_drive=sim_utils.UrdfConverterCfg.JointDriveCfg(
-    #         gains=sim_utils.UrdfConverterCfg.JointDriveCfg.PDGainsCfg(stiffness=0, damping=0)
-    #     ),
-    # ),
-    spawn=sim_utils.UsdFileCfg(
-        usd_path=f"{ISAACLAB_ASSETS_DATA_DIR}/Robots/go2w_description/usd/go2w.usd",
+    spawn=sim_utils.UrdfFileCfg(
+        fix_base=False,
+        merge_fixed_joints=True,
+        replace_cylinders_with_capsules=False,
+        asset_path=f"{ISAACLAB_ASSETS_DATA_DIR}/Robots/go2w_description/urdf/go2w_description.urdf",
         activate_contact_sensors=True,
         rigid_props=sim_utils.RigidBodyPropertiesCfg(
             disable_gravity=False,
@@ -41,6 +22,9 @@ UNITREE_GO2W_CFG = ArticulationCfg(
         ),
         articulation_props=sim_utils.ArticulationRootPropertiesCfg(
             enabled_self_collisions=True, solver_position_iteration_count=4, solver_velocity_iteration_count=0
+        ),
+        joint_drive=sim_utils.UrdfConverterCfg.JointDriveCfg(
+            gains=sim_utils.UrdfConverterCfg.JointDriveCfg.PDGainsCfg(stiffness=0, damping=0)
         ),
     ),
     init_state=ArticulationCfg.InitialStateCfg(
