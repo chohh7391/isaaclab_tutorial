@@ -42,7 +42,11 @@ UNITREE_GO2W_CFG = ArticulationCfg(
     soft_joint_pos_limit_factor=0.9,
     actuators={
         "legs": DCMotorCfg(
-            joint_names_expr=["^(?!.*_foot_joint).*"],
+            joint_names_expr=[
+                ".*_hip_joint",
+                ".*_thigh_joint",
+                ".*_calf_joint"
+            ],
             effort_limit=23.5,
             saturation_effort=23.5,
             velocity_limit=30.0,
